@@ -5,7 +5,6 @@
 font-family: 'Myriad Pro - Light Semi Ext';
 src: url('/Users/EugeneDiveev1/ProjectsWeb/CV/fonts/MyriadProLightSemiExtended.eot');
 src: url('/Users/EugeneDiveev1/ProjectsWeb/CV/fonts/MyriadProLightSemiExtended.eot?iefix') format('eot'),
-url('/Users/EugeneDiveev1/ProjectsWeb/CV/fonts/MyriadProLightSemiExtended.woff') format('woff'),
 url('/Users/EugeneDiveev1/ProjectsWeb/CV/fonts/MyriadProLightSemiExtended.ttf') format('truetype'),
 url('/Users/EugeneDiveev1/ProjectsWeb/CV/fonts/MyriadProLightSemiExtended.svg#webfont') format('svg');
 
@@ -35,23 +34,24 @@ font-style: normal;
 /*-----------------  POSITION  -----------------*/
 
 body{
-	width: 2480px;
-	height: 3508px;
+	min-width: 2480px;
+	min-height: 3508px;
 	margin: 0 auto;
+	display: table-caption;
 }	
 
 .left{
-	position:inherit;
-	width:50%;
-	top:0;
-	left: 0;
+	display: inline-block;
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
 }
 
 .right{
-	position:absolute;
-	width:50%;
-	top:0;
-	left: 50%;
+	display: inline-block;
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
 }	
 
 
@@ -63,6 +63,7 @@ height: 405px;
 background-color: #3d6cb0;
 border-radius: 50%;
 margin: 30px;
+
 
 }
 
@@ -543,19 +544,6 @@ margin-block-start: 92px;
 	margin-block-start:-47px;
 }
 
-.photoshop_title {
-width: 271px;
-height: 35px;
-color: #000000;
-font-family: "Myriad Pro";
-font-size: 51px;
-font-weight: 400;
-text-transform: uppercase;
-margin-left: 17px;
-margin-block-start:127px;
-margin-block-end:0;
-}
-
 .photoshop .vector_blue {
 width: 505px;
 height: 46px;
@@ -615,19 +603,25 @@ background-color: #3d6cb0;
 }
 
 .software_block_left{
-	position: inherit;
-    width: 25%;
-    top: 0;
-    left: 0;
-    display: table-row-group;
+	display: inline-block;
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
 }
 
 .software_block_right{
-	position: absolute;
-    top: 82.9%;
-    display: table-row-group;
-    left: 27.1%;
+	display: inline-block;
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
 }	
 
+.software_block table{
+	margin-block-start:64px;
+}
 
 
+
+@media screen {
+	
+}
