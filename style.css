@@ -1,3 +1,6 @@
+  
+/*---------------  FONTS  ------------------*/
+
    @font-face{
 font-family: 'Myriad Pro - Light Semi Ext';
 src: url('/Users/EugeneDiveev1/ProjectsWeb/CV/fonts/MyriadProLightSemiExtended.eot');
@@ -11,7 +14,7 @@ font-style: normal;
 }
 
 @font-face {
-	font-family: 'Myriad Pro';
+	font-family: 'Myriad Pro - Regular';
 	src: url('fonts/MyriadPro-Regular.eot');
 	src: local('☺'), url('fonts/MyriadPro-Regular.woff') format('woff'), url('fonts/MyriadPro-Regular.ttf') format('truetype'), url('fonts/MyriadPro-Regular.svg') format('svg');
 	
@@ -20,6 +23,40 @@ font-style: normal;
  }
 
 
+ @font-face {
+	font-family: 'Myriad Pro - Bold';
+	src: url('fonts/MyriadPro-Bold.eot');
+	src: local('☺'), url('fonts/MyriadPro-Bold.woff') format('woff'), url('fonts/MyriadPro-Bold.ttf') format('truetype'), url('fonts/MyriadPro-Bold.svg') format('svg');
+	
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*-----------------  POSITION  -----------------*/
+
+body{
+	width: 2480px;
+	height: 3508px;
+	margin: 0 auto;
+}	
+
+.left{
+	position:inherit;
+	width:50%;
+	top:0;
+	left: 0;
+}
+
+.right{
+	position:absolute;
+	width:50%;
+	top:0;
+	left: 50%;
+}	
+
+
+
+/*------------------- HEADER -------------------*/
 .inner_circle{
 width: 405px;
 height: 405px;
@@ -39,7 +76,7 @@ margin-left: 320px;
 }
 
 .name{
-width: 548px;
+width: 554px;
 height: 74px;
 color: #000000;
 font-family: "Myriad Pro - Light Semi Ext";
@@ -51,10 +88,10 @@ margin-block-start:74px;
 }
 
 .surname{
-width: 553px;
+width: 554px;
 height: 85px;
 color: #000000;
-font-family: "Myriad Pro";
+font-family: "Myriad Pro - Bold";
 font-size: 123px;
 font-weight: 700;
 text-transform: uppercase;
@@ -66,18 +103,531 @@ margin-block-start:26px;
 width: 422px;
 height: 34px;
 color: #000000;
-font-family: "Myriad Pro";
-font-size: 50px;
+font-family: "Myriad Pro - Bold";
+font-size: 46px;
 font-weight: 700;
 text-transform: uppercase;
 margin-left: 342px;
 margin-block-start:45px;
+margin-block-end:0;
 }
 
-.header_text p, h4{
+.header_text p, h3, h4, h5{
 	margin-block-end:0;
 	margin-block-start:0;
 	text-align: center;
 }
+
+/*--------------------PROFILE----------------------*/
+
+.profile img{
+margin-left: 122px;
+margin-block-start:165px;
+margin-block-end:0;
+width: 148px;
+height: 143px;
+}
+
+.profile h1{
+width: 300px;
+height: 57px;
+color: #3d6cb0;
+font-family: "Myriad Pro - Bold";
+font-size: 82px;
+font-weight: 700;
+text-transform: uppercase;
+margin-left: 294px;
+margin-block-start:-110px;
+margin-block-end:0;
+}
+
+.profile .line{
+width: 337px;
+height: 11px;
+background-color: #3d6cb0;
+margin-left: 611px;
+margin-block-start:-23px;
+}
+
+.profile p {
+width: 824px;
+height: 472px;
+color: #000000;
+font-family: "Myriad Pro - Regular";
+font-size: 31px;
+font-weight: 400;
+margin-left: 121px;
+margin-block-start:98px;
+}
+
+.profile span {
+font-family: "Myriad Pro - Bold";
+font-weight: 700;
+}
+
+/*-----------------CONTACTS------------------*/
+
+.contact img{
+margin-left: 122px;
+margin-block-start:96px;
+margin-block-end:0;
+width: 143px;
+height: 143px;
+}
+
+.contact h1{
+width: 346px;
+height: 57px;
+color: #3d6cb0;
+font-family: "Myriad Pro - Bold";
+font-size: 82px;
+font-weight: 700;
+text-transform: uppercase;
+margin-left: 291px;
+margin-block-start:-110px;
+margin-block-end:0;
+}
+
+.contact .line{
+width: 297px;
+height: 10px;
+background-color: #3d6cb0;
+margin-left: 651px;
+margin-block-start:-23px;
+margin-block-end:0;
+}
+
+.address{
+display: -webkit-box;
+-webkit-box-align: baseline;
+
+	
+}
+
+.address_title{
+	width: 174px;
+height: 28px;
+color: #3d6cb0;
+font-family: "Myriad Pro - Bold";
+font-size: 41px;
+font-weight: 700;
+text-transform: uppercase;
+margin-left: 121px;
+margin-block-start:142px;
+margin-block-end:0;
+}
+
+.address span {
+	width: 283px;
+height: 37px;
+color: #000000;
+font-family: "Myriad Pro - Regular";
+font-size: 41px;
+font-weight: 400;
+margin-left: 85px;
+}
+
+
+.email{
+display: -webkit-box;
+-webkit-box-align: baseline;
+
+	
+}
+
+.email_title{
+	width: 174px;
+height: 28px;
+color: #3d6cb0;
+font-family: "Myriad Pro - Bold";
+font-size: 41px;
+font-weight: 700;
+text-transform: uppercase;
+margin-left: 121px;
+margin-block-start:79px;
+margin-block-end:0;
+}
+
+.email span {
+	width: 283px;
+height: 37px;
+color: #000000;
+font-family: "Myriad Pro - Regular";
+font-size: 41px;
+font-weight: 400;
+margin-left: 85px;
+}
+
+.phone{
+display: -webkit-box;
+-webkit-box-align: baseline;
+
+	
+}
+
+.phone_title{
+	width: 174px;
+height: 28px;
+color: #3d6cb0;
+font-family: "Myriad Pro - Bold";
+font-size: 41px;
+font-weight: 700;
+text-transform: uppercase;
+margin-left: 121px;
+margin-block-start:82px;
+margin-block-end:0;
+}
+
+.phone span {
+	width: 283px;
+height: 37px;
+color: #000000;
+font-family: "Myriad Pro - Regular";
+font-size: 41px;
+font-weight: 400;
+margin-left: 85px;
+}
+
+.website{
+display: -webkit-box;
+-webkit-box-align: baseline;
+
+	
+}
+
+.website_title{
+	width: 174px;
+height: 28px;
+color: #3d6cb0;
+font-family: "Myriad Pro - Bold";
+font-size: 41px;
+font-weight: 700;
+text-transform: uppercase;
+margin-left: 121px;
+margin-block-start:78px;
+margin-block-end:0;
+}
+
+.website span {
+	width: 283px;
+height: 37px;
+color: #000000;
+font-family: "Myriad Pro - Regular";
+font-size: 41px;
+font-weight: 400;
+margin-left: 85px;
+}
+
+/*------------------  SKILLS  -------------------*/
+
+.skills img{
+margin-left: 122px;
+margin-block-start:98px;
+margin-block-end:0;
+width: 143px;
+height: 143px;
+}
+
+.skills h1{
+width: 241px;
+height: 57px;
+color: #3d6cb0;
+font-family: "Myriad Pro - Bold";
+font-size: 82px;
+font-weight: 700;
+text-transform: uppercase;
+margin-left: 287px;
+margin-block-start:-110px;
+margin-block-end:0;
+}
+
+.skills .line{
+width: 386px;
+height: 11px;
+background-color: #3d6cb0;
+margin-left: 557px;
+margin-block-start:-23px;
+margin-block-end:0;
+}
+
+.creative_title{
+width: 198px;
+height: 35px;
+color: #000000;
+font-family: "Myriad Pro - Regular";
+font-size: 51px;
+font-weight: 400;
+text-transform: uppercase;
+margin-left: 440px;
+margin-block-start:127px;
+margin-block-end:0;
+}
+
+.teamwork_title{
+width: 259px;
+height: 35px;
+color: #000000;
+font-family: "Myriad Pro - Regular";
+font-size: 51px;
+font-weight: 400;
+text-transform: uppercase;
+margin-left: 407px;
+margin-block-start:53px;
+margin-block-end:0;
+}
+
+.innovate_title{
+width: 214px;
+height: 35px;
+color: #000000;
+font-family: "Myriad Pro - Regular";
+font-size: 51px;
+font-weight: 400;
+text-transform: uppercase;
+margin-left: 431px;
+margin-block-start:53px;
+margin-block-end:0;
+}
+
+.communication_title{
+width: 385px;
+height: 35px;
+color: #000000;
+font-family: "Myriad Pro - Regular";
+font-size: 51px;
+font-weight: 400;
+text-transform: uppercase;
+margin-left: 343px;
+margin-block-start:53px;
+margin-block-end:0;
+}
+
+.circles{
+margin-left: 192px;
+margin-block-start:30px;
+margin-block-end:0;
+display: -webkit-box;	
+}
+
+.small_circle_blue{
+width: 35px;
+height: 35px;
+background-color: #3d6cb0;
+border-radius: 50%;
+margin-left: 19px;
+}
+
+.small_circle_grey{
+width: 35px;
+height: 35px;
+background-color: #e6e6e6;
+border-radius: 50%;
+margin-left: 19px;
+}
+
+/*------------------  EDUCATION  ------------------*/
+
+.education img{
+/*margin-left: 122px;*/
+margin-block-start:152px;
+margin-block-end:0;
+width: 148px;
+height: 143px;
+}
+
+.education h1{
+width: 429px;
+height: 57px;
+color: #3d6cb0;
+font-family: "Myriad Pro - Bold";
+font-size: 82px;
+font-weight: 700;
+text-transform: uppercase;
+margin-left: 191px;
+margin-block-start:-110px;
+margin-block-end:0;
+}
+
+.education .line{
+width: 623px;
+height: 11px;
+background-color: #3d6cb0;
+margin-left: 641px;
+margin-block-start:-23px;
+margin-block-end:0;
+}
+
+.small_circle_black{
+width: 40px;
+height: 40px;
+background-color: #000000;
+border-radius: 50%;
+margin-left: 24px;
+
+}
+
+
+.education_list	{
+margin-block-start: 92px;
+}
+
+.education_block{
+margin-top: 41px;
+display: inline-block;
+min-width: 1240px;
+
+}
+
+.master_degree{
+width: 940px;
+height: 35px;
+color: #3d6cb0;
+font-family: "Myriad Pro - Bold";
+font-size: 51px;
+font-weight: 700;
+text-transform: uppercase;
+margin-left: 107px;
+margin-block-start:-48px;
+margin-block-end:4px;
+}
+
+.master_degree span{
+
+height: 40px;
+color: #020202;
+font-family: "Myriad Pro - Regular";
+font-size: 51px;
+font-weight: 400
+}
+
+.university_name{
+width: 393px;
+height: 35px;
+color: #000000;
+font-family: "Myriad Pro - Regular";
+font-size: 51px;
+font-weight: 400;
+text-transform: uppercase;
+margin-left: 107px;
+margin-block-start:32px;
+margin-block-end:0;
+}
+
+.education_block p{
+width: 1200px;
+height: 102px;
+color: #000000;
+font-family: "Myriad Pro";
+font-size: 31px;
+font-weight: 400;
+margin-left: 110px;
+margin-block-start:31px;
+}
+
+/*----------------- EXPIRIENCE -----------------*/
+.experience_list	{
+margin-block-start: 92px;
+}
+
+.experience_list h3{
+	color: #000000;
+}
+
+.experience_block{
+	margin-block-start:-47px;
+}
+
+/*--------------------- SOFTWARE ---------------------*/
+
+.software_block{
+	margin-block-start:-47px;
+}
+
+.photoshop_title {
+width: 271px;
+height: 35px;
+color: #000000;
+font-family: "Myriad Pro";
+font-size: 51px;
+font-weight: 400;
+text-transform: uppercase;
+margin-left: 17px;
+margin-block-start:127px;
+margin-block-end:0;
+}
+
+.photoshop .vector_blue {
+width: 505px;
+height: 46px;
+background-color: #3d6cb0;
+}
+
+.vector_grey {
+width: 554px;
+height: 46px;
+background-color: #e6e6e6;
+margin-left: 17px;
+margin-block-start:39px;
+margin-block-end:0;
+}
+
+.illustrator_title {
+width: 351px;
+height: 35px;
+color: #000000;
+font-family: "Myriad Pro";
+font-size: 51px;
+font-weight: 400;
+text-transform: uppercase;
+margin-left: 17px;
+margin-block-start:57px;
+margin-block-end:0;	
+}
+
+.illustrator .vector_blue {
+width: 391px;
+height: 46px;
+background-color: #3d6cb0;
+}
+
+.indesign .vector_blue {
+width: 312px;
+height: 46px;
+background-color: #3d6cb0;
+}
+
+.dreamweaver .vector_blue {
+width: 461px;
+height: 46px;
+background-color: #3d6cb0;
+}
+
+.after_effects .vector_blue {
+width: 342px;
+height: 46px;
+background-color: #3d6cb0;
+}
+
+.htmlcss .vector_blue {
+width: 505px;
+height: 46px;
+background-color: #3d6cb0;
+}
+
+.software_block_left{
+	position: inherit;
+    width: 25%;
+    top: 0;
+    left: 0;
+    display: table-row-group;
+}
+
+.software_block_right{
+	position: absolute;
+    top: 82.9%;
+    display: table-row-group;
+    left: 27.1%;
+}	
+
 
 
